@@ -8,9 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface YHRoundBorderedButton : UIButton
+IB_DESIGNABLE @interface YHRoundBorderedButton : UIButton
 
 /// Whether the plus icon is visible on the button.
 @property (nonatomic, getter = isPlusIconVisible) BOOL plusIconVisible;
+
+@property (nonatomic) IBInspectable CGFloat cornerRadius;
+@property (nonatomic) IBInspectable CGFloat borderWidth;
 
 @end

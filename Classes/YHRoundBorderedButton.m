@@ -47,12 +47,17 @@
     [self setTitleColor:[UIColor whiteColor] forState:UIControlStateHighlighted];
     [self setTitleColor:[UIColor grayColor] forState:UIControlStateDisabled];
     
-    self.titleLabel.font = [UIFont boldSystemFontOfSize:13];
-    
-    self.layer.cornerRadius = 3.5;
-    self.layer.borderWidth = 1.0;
-    
     [self refreshBorderColor];
+}
+
+- (void)setCornerRadius:(CGFloat)cornerRadius
+{
+    self.layer.cornerRadius = cornerRadius;
+}
+
+- (void)setBorderWidth:(CGFloat)borderWidth
+{
+    self.layer.borderWidth = borderWidth;
 }
 
 - (void)setPlusIconVisible:(BOOL)plusIconVisible
